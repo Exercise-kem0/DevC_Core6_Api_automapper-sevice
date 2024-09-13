@@ -1,0 +1,6 @@
+@DevC_Core5_Api_Jwt_HostAddress = http://localhost:5262
+
+GET {{DevC_Core5_Api_Jwt_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
