@@ -12,9 +12,8 @@ namespace DevC_Core5_Api_Jwt.Models
         [MaxLength(2500)]
         public string Storyline { get; set; }
         public byte[] PostePic { get; set; }
-
+        [ForeignKey(nameof(Genre))]
         public byte GenreId { get; set; }
-        [ForeignKey("GenreId")]
         public Genre Genre { get; set; }
 
 

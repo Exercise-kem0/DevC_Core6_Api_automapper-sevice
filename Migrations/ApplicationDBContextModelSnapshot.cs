@@ -36,7 +36,7 @@ namespace DevC_Core5_Api_Jwt.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Genres");
+                    b.ToTable("Genres", (string)null);
                 });
 
             modelBuilder.Entity("DevC_Core5_Api_Jwt.Models.Movie", b =>
@@ -74,7 +74,7 @@ namespace DevC_Core5_Api_Jwt.Migrations
 
                     b.HasIndex("GenreId");
 
-                    b.ToTable("Movies");
+                    b.ToTable("Movies", (string)null);
                 });
 
             modelBuilder.Entity("DevC_Core5_Api_Jwt.Models.Movie", b =>
