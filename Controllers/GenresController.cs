@@ -56,7 +56,8 @@
             {
                 return NotFound($"Noo Genre with id : {id}");
             }
-            foundGenre.Name = ContainEditDto.Name;
+            //foundGenre.Name = ContainEditDto.Name;
+            _mapper.Map(genreDto,foundGenre); //_mapper.Map(source,destination)
            var GenreToUpdate =  _genreService.Update(foundGenre);
             return Ok(GenreToUpdate);
         }
